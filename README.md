@@ -6,7 +6,7 @@ Este proyecto es una personalización del repositorio original [ewojjowe/static-
 
 - Se personalizó el contenido del archivo `index.html` agregando información personal.
 - Se cambiaron colores y estilos en el archivo CSS.
-- Se actualizaron enlaces e imágenes para adaptarlos al contexto personal.
+- Se actualizaron enlaces para adaptarlos al contexto personal.
 
 ## 🧰 Tecnologías utilizadas
 

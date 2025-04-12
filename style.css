@@ -12,7 +12,7 @@ header {
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-	padding: 0px 50px;
+
 }
 
 .main-nav {
@@ -28,9 +28,9 @@ header {
 .main-nav li a {
 	color: white;
 	text-decoration: none;
-	padding: 5px 20px;
+	padding: 10px 20px;
 	font-family: "Roboto", sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .main-nav li.active a {
@@ -65,11 +65,9 @@ h1 {
 	font-family: "Roboto", sans-serif;
 	color: white;
 	text-transform: uppercase;
-	/*Modificado*/
-	font-size: 60px;
+	font-size: 70px;
 	text-align: center;
-	/*Modificado*/
-	margin-top: 500px;
+	margin-top: 150px;
 }
 
 h2 {
@@ -93,11 +91,11 @@ h2 {
 }
 
 .btn-one {
-	background-color: darkorange;
+	background-color: #A6826D;
 }
 
 .btn-two:hover {
-	background-color: darkorange;
+	background-color: #A6826D;
 	transition: all 0.2s ease-in;
 }
 
@@ -131,6 +129,12 @@ h2 {
 	background-size: cover;
 	background-position: center;
 
+}
+
+.blog-section {
+	margin: 50px;
+	font-family: "Roboto", sans-serif;
+	font-size: 25px;
 }
 
 .contact {
@@ -174,7 +178,7 @@ textarea {
 }
 
 .form input.button {
-	background-color: darkorange;
+	background-color: #A6826D;
 	border: none;
 	color: white;
 	width: 71%;
@@ -182,14 +186,14 @@ textarea {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 22px;
 	margin: 4px 2px;
 	cursor: pointer;
 }
 
 .form input.button:hover {
 	background-color: transparent;
-	border: 1px solid white;
+	border: 2px solid white;
 	color: white;
 }
 
@@ -216,13 +220,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer {
-	background-color: #1a202c;
+	background-color: #A6826D;
 	color: #f7fafc;
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	font-size: 22px;
 
 }
 
