@@ -12,6 +12,7 @@ header {
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+	padding: 0px 50px;
 }
 
 .main-nav {
@@ -56,15 +57,23 @@ header {
 	position: absolute;
 	top: 100px;
 	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 h1 {
 	font-family: "Roboto", sans-serif;
 	color: white;
 	text-transform: uppercase;
-	font-size: 70px;
+	/*Modificado*/
+	font-size: 60px;
 	text-align: center;
-	margin-top: 300px;
+	/*Modificado*/
+	margin-top: 500px;
+}
+
+h2 {
+	width: 500px;
 }
 
 .button {
@@ -94,8 +103,8 @@ h1 {
 
 .grid-container {
 	display: grid;
-  	grid-template-columns: auto auto;
-  	padding: 10px;
+	grid-template-columns: auto auto;
+	padding: 10px;
 }
 
 .grid-item {
@@ -151,7 +160,8 @@ h1 {
 	margin-bottom: 20px;
 }
 
-.form input, textarea {
+.form input,
+textarea {
 	font-size: 20px;
 	text-decoration: none;
 	outline: none;
@@ -164,38 +174,94 @@ h1 {
 }
 
 .form input.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    width: 71%;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
- }
+	background-color: darkorange;
+	border: none;
+	color: white;
+	width: 71%;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.form input.button:hover {
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+}
 
 input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
- }
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
 
- .subject {
- 	height: 150px;
- 	color: black;
- }
+.subject {
+	height: 150px;
+	color: black;
+}
 
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-  	.blog {
-    	background-image: url(assets/banner-texture@2x.png) !important;
-  	}
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.blog {
+		background-image: url(assets/banner-texture@2x.png) !important;
+	}
 
-  	.faq {
-    	background-image: url(assets/img-prop-type@2x.jpg) !important;
-  	}
+	.faq {
+		background-image: url(assets/img-prop-type@2x.jpg) !important;
+	}
+}
+
+.footer {
+	background-color: #1a202c;
+	color: #f7fafc;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.footer span {
+	margin-bottom: 0;
+	font-size: 0.9em;
+	padding-left: 20px;
+}
+
+.footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.footer a {
+	color: #f7fafc;
+	text-decoration: none;
+	font-size: 1.5em;
+	margin: 0 10px;
+	transition: color 0.3s ease;
+}
+
+.footer a:hover {
+	color: #a0aec0;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer span {
+		margin-bottom: 10px;
+	}
+
+	.footer ul {
+		justify-content: center;
+	}
 }
